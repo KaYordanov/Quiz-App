@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "World Geography",
+    "description": "Test your knowledge of countries, capitals, and landmarks around the globe.",
+    "questions": [
+      {
+        "text": "What is the capital city of Australia?",
+        "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
+        "answer": "Canberra"
+      },
+      {
+        "text": "Which river flows through the city of Paris?",
+        "options": ["Danube", "Seine", "Thames", "Rhine"],
+        "answer": "Seine"
+      },
+      {
+        "text": "Mount Kilimanjaro is located in which country?",
+        "options": ["Kenya", "Ethiopia", "Tanzania", "Uganda"],
+        "answer": "Tanzania"
+      },
+      {
+        "text": "Which desert is the largest in the world?",
+        "options": ["Sahara", "Gobi", "Arabian", "Kalahari"],
+        "answer": "Sahara"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "World History",
+    "description": "A short quiz on famous events and figures throughout history.",
+    "questions": [
+      {
+        "text": "Who was the first President of the United States?",
+        "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+        "answer": "George Washington"
+      },
+      {
+        "text": "In which year did World War II end?",
+        "options": ["1940", "1945", "1950", "1939"],
+        "answer": "1945"
+      },
+      {
+        "text": "The Great Wall of China was primarily built to protect against which group?",
+        "options": ["Romans", "Japanese", "Mongols", "Persians"],
+        "answer": "Mongols"
+      },
+      {
+        "text": "Who discovered penicillin?",
+        "options": ["Alexander Fleming", "Marie Curie", "Isaac Newton", "Albert Einstein"],
+        "answer": "Alexander Fleming"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Movies & Pop Culture",
+    "description": "How much do you know about popular films and entertainment?",
+    "questions": [
+      {
+        "text": "Which movie features the quote 'May the Force be with you'?",
+        "options": ["Star Trek", "Star Wars", "The Matrix", "Avatar"],
+        "answer": "Star Wars"
+      },
+      {
+        "text": "Who directed the movie 'Titanic'?",
+        "options": ["Steven Spielberg", "James Cameron", "Christopher Nolan", "Ridley Scott"],
+        "answer": "James Cameron"
+      },
+      {
+        "text": "Which superhero is known as 'The Dark Knight'?",
+        "options": ["Superman", "Iron Man", "Batman", "Spider-Man"],
+        "answer": "Batman"
+      },
+      {
+        "text": "In which fictional city does Batman operate?",
+        "options": ["Metropolis", "Gotham", "Central City", "Star City"],
+        "answer": "Gotham"
+      }
+    ]
+  }
+]

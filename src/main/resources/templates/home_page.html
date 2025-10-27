@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Quiz It</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Select a quiz</h1>
+
+    <div class="quiz-header">
+        <span class="quiz-header-title">Title</span>
+        <span class="quiz-description">Description</span>
+    </div>
+
+    <div th:each="q : ${quizzes}" class="quiz-row">
+        <a th:href="@{/quizzes/{id}(id=${q.id})}" th:text="${q.title}" class="quiz-title"> </a>
+        <span th:text="${q.description}" class="quiz-description"></span>
+    </div>
+
+</body>
+</html>

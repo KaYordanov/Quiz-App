@@ -1,0 +1,129 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.quiz-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.quiz-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.quiz-header-title{
+    color: #555;
+    font-weight: normal;
+}
+
+.quiz-title{
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.quiz-title:hover{
+    text-decoration: underline;
+    color: #555;
+}
+
+.quiz-description{
+    color: #555;
+    max-width: 60%;
+    text-align: right;
+}
+
+.results-table{
+    border-collapse: collapse;
+    margin-left: 0;
+    width: 70%;
+    text-align: left;
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.results-table th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.quiz-container h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.question-block {
+    margin-bottom: 25px;
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.option-label {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button,
+.btn-retake {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover,
+.btn-retake:hover {
+    background-color: #0056b3;
+}
+
+.btn-retake {
+    text-decoration: none;
+    color: black;
+}
+
+.result-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.result-footer span {
+    font-weight: bold;
+    color: #333;
+}

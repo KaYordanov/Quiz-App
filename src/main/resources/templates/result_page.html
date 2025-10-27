@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz result</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div>
+        <h1>Results</h1><br>
+
+        <div th:if="${!result.wrongAnswers.isEmpty()}" >
+            <h2>Wrong questions and their correct answers</h2>
+
+            <table class="results-table">
+                <tr>
+                    <th>Question</th>
+                    <th>Correct answer</th>
+                </tr>
+                <tr th:each="wrongAnser: ${result.wrongAnswers}">
+                    <td th:text="${wrongAnser.text}"></td>
+                    <td th:text="${wrongAnser.answer}"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <p> Correct answers: <span th:text="${result.getCorrectAnswersCount()}"></span></p>
+
+        <div class="result-footer">
+            <span th:text="${result.message}"></span>
+            <a th:href="@{/}">
+                <button>Home</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

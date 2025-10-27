@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Selected Quiz</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 th:text="${quiz.title}" class="quiz-title"></h1>
+
+        <form th:action="@{/quizzes/submit}" th:object="${form}" method="post">
+            <input type="hidden" th:field="*{quizId}"/>
+
+            <div th:each="q, iterStat : ${quiz.questions}" class="question-block">
+                <p th:text="${q.text}"></p>
+
+                <div th:each="option : ${q.options}">
+                    <label class="option-label">
+                        <input type="radio" th:field="*{answers[__${iterStat.index}__]}" th:value="${option}"/>
+                        <span th:text="${option}"></span>
+                    </label><br>
+                </div>
+
+            </div>
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <a th:href="@{/quizzes/{id}(id=${quiz.id})}" class="btn-retake">Retake Quiz</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
