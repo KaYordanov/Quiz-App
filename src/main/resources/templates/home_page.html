@@ -7,16 +7,13 @@
 </head>
 <body>
     <h1>Select a quiz</h1>
-
     <div class="quiz-header">
         <span class="quiz-header-title">Title</span>
         <span class="quiz-description">Description</span>
     </div>
-
     <div th:each="q : ${quizzes}" class="quiz-row">
         <a th:href="@{/quizzes/{id}(id=${q.id})}" th:text="${q.title}" class="quiz-title"> </a>
         <span th:text="${q.description}" class="quiz-description"></span>
     </div>
-
 </body>
 </html>

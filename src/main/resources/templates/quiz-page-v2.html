@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+<div class="quiz-container">
+    <form th:action="@{/quizzes/page/{pageNumber}(pageNumber=${index})}" th:object="${form}" method="post">
+        <input type="hidden" th:field="*{quizId}"/>
+        <input type="hidden" name="index" th:value="${index}">
+        <div class="question-block">
+            <h1 th:text="${questionToDisplay.text}" class="question-text"></h1>
+            <div th:each="option : ${questionToDisplay.options}">
+                <label class="option-label">
+                    <input type="radio" th:field="*{answers[__${index}__]}" th:value="${option}"/>
+                    <span th:text="${option}"></span>
+                </label><br>
+            </div>
+        </div>
+        <div class="controls-container">
+            <div class="button-group">
+                <button type="submit" name="action" value="previous" th:if="${index > 0}">Previous</button>
+                <a th:href="@{/quizzes/{id}(id=${form.quizId})}" class="btn-retake">Retake Quiz</a>
+                <button type="submit" name="action" value="next" th:if="${index + 1 < totalPages}">Next</button>
+                <button type="submit" name="action" value="submit" th:if="${index + 1 == totalPages}" class="btn-submit">Submit</button>
+                <span class="question-counter">
+            </span>
+            </div>
+            <span>
+                Question <span th:text="${index + 1}"></span> of <span th:text="${totalPages}"></span>
+            </span>
+        </div>
+    </form>
+</div>
+</body>
+</html>

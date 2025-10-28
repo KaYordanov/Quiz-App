@@ -19,7 +19,7 @@ public class HomeController {
 
     @GetMapping
     public String getHomePage(Model model){
-        List<Quiz> quizList = quizService.retrieveQuizzes();
+        List<Quiz> quizList = quizService.getQuizList();
 
         model.addAttribute("quizzes", quizList);
         return "home_page";
