@@ -5,24 +5,24 @@
     "description": "Test your knowledge of countries, capitals, and landmarks around the globe.",
     "questions": [
       {
-        "text": "What is the capital city of Australia?",
-        "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
-        "answer": "Canberra"
+        "text": "What is the capital city of Canada?",
+        "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        "answer": "Ottawa"
       },
       {
-        "text": "Which river flows through the city of Paris?",
-        "options": ["Danube", "Seine", "Thames", "Rhine"],
-        "answer": "Seine"
+        "text": "Which river flows through London?",
+        "options": ["Seine", "Thames", "Danube", "Rhine"],
+        "answer": "Thames"
       },
       {
-        "text": "Mount Kilimanjaro is located in which country?",
-        "options": ["Kenya", "Ethiopia", "Tanzania", "Uganda"],
-        "answer": "Tanzania"
+        "text": "Mount Everest is located in which country?",
+        "options": ["China", "Nepal", "India", "Bhutan"],
+        "answer": "Nepal"
       },
       {
-        "text": "Which desert is the largest in the world?",
-        "options": ["Sahara", "Gobi", "Arabian", "Kalahari"],
-        "answer": "Sahara"
+        "text": "Which desert is the smallest in the world?",
+        "options": ["Gobi", "Sahara", "Kalahari", "Carcross"],
+        "answer": "Carcross"
       }
     ]
   },
@@ -32,51 +32,105 @@
     "description": "A short quiz on famous events and figures throughout history.",
     "questions": [
       {
-        "text": "Who was the first President of the United States?",
-        "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
-        "answer": "George Washington"
+        "text": "Who was the first Emperor of Rome?",
+        "options": ["Julius Caesar", "Augustus", "Nero", "Caligula"],
+        "answer": "Augustus"
       },
       {
-        "text": "In which year did World War II end?",
-        "options": ["1940", "1945", "1950", "1939"],
-        "answer": "1945"
+        "text": "In which year did the Berlin Wall fall?",
+        "options": ["1987", "1989", "1991", "1993"],
+        "answer": "1989"
       },
       {
-        "text": "The Great Wall of China was primarily built to protect against which group?",
-        "options": ["Romans", "Japanese", "Mongols", "Persians"],
-        "answer": "Mongols"
+        "text": "Who painted the Mona Lisa?",
+        "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+        "answer": "Leonardo da Vinci"
       },
       {
-        "text": "Who discovered penicillin?",
-        "options": ["Alexander Fleming", "Marie Curie", "Isaac Newton", "Albert Einstein"],
-        "answer": "Alexander Fleming"
+        "text": "The Industrial Revolution began in which country?",
+        "options": ["France", "Germany", "England", "USA"],
+        "answer": "England"
       }
     ]
   },
   {
     "id": 3,
-    "title": "Movies & Pop Culture",
-    "description": "How much do you know about popular films and entertainment?",
+    "title": "Science & Technology",
+    "description": "Test your knowledge of scientific discoveries and technology.",
     "questions": [
       {
-        "text": "Which movie features the quote 'May the Force be with you'?",
-        "options": ["Star Trek", "Star Wars", "The Matrix", "Avatar"],
-        "answer": "Star Wars"
+        "text": "What is the chemical symbol for gold?",
+        "options": ["Au", "Ag", "Gd", "Go"],
+        "answer": "Au"
       },
       {
-        "text": "Who directed the movie 'Titanic'?",
-        "options": ["Steven Spielberg", "James Cameron", "Christopher Nolan", "Ridley Scott"],
-        "answer": "James Cameron"
+        "text": "Who proposed the theory of relativity?",
+        "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+        "answer": "Albert Einstein"
       },
       {
-        "text": "Which superhero is known as 'The Dark Knight'?",
-        "options": ["Superman", "Iron Man", "Batman", "Spider-Man"],
-        "answer": "Batman"
+        "text": "What is the powerhouse of the cell?",
+        "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+        "answer": "Mitochondria"
       },
       {
-        "text": "In which fictional city does Batman operate?",
-        "options": ["Metropolis", "Gotham", "Central City", "Star City"],
-        "answer": "Gotham"
+        "text": "Which planet is known as the Red Planet?",
+        "options": ["Mars", "Jupiter", "Venus", "Saturn"],
+        "answer": "Mars"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Movies & Entertainment",
+    "description": "Check your knowledge of popular films and entertainment.",
+    "questions": [
+      {
+        "text": "Which actor played Jack in Titanic?",
+        "options": ["Leonardo DiCaprio", "Brad Pitt", "Tom Hanks", "Johnny Depp"],
+        "answer": "Leonardo DiCaprio"
+      },
+      {
+        "text": "Which movie won the Best Picture Oscar in 2020?",
+        "options": ["1917", "Parasite", "Joker", "Ford v Ferrari"],
+        "answer": "Parasite"
+      },
+      {
+        "text": "Which animated film features a talking snowman named Olaf?",
+        "options": ["Moana", "Frozen", "Tangled", "Coco"],
+        "answer": "Frozen"
+      },
+      {
+        "text": "Who plays Tony Stark in the Marvel Cinematic Universe?",
+        "options": ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+        "answer": "Robert Downey Jr."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sports",
+    "description": "Test your knowledge of famous sports and athletes.",
+    "questions": [
+      {
+        "text": "Which country won the FIFA World Cup in 2018?",
+        "options": ["Brazil", "France", "Germany", "Argentina"],
+        "answer": "France"
+      },
+      {
+        "text": "Who holds the record for the most Olympic gold medals?",
+        "options": ["Usain Bolt", "Michael Phelps", "Simone Biles", "Carl Lewis"],
+        "answer": "Michael Phelps"
+      },
+      {
+        "text": "In tennis, what is the term for 0 points?",
+        "options": ["Love", "Ace", "Deuce", "Fault"],
+        "answer": "Love"
+      },
+      {
+        "text": "Which sport uses a pommel horse?",
+        "options": ["Gymnastics", "Equestrian", "Diving", "Pole Vault"],
+        "answer": "Gymnastics"
       }
     ]
   }

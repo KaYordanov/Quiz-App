@@ -5,8 +5,10 @@ import com.project.quiz.model.Quiz;
 import java.util.List;
 
 public interface FileService {
-    void retrieveList();
+    void initializeList();
     List<Quiz> retrieveQuizList();
 
     void shuffle(List<Quiz> quizList);
+
+    Quiz getQuizById(int id);
 }

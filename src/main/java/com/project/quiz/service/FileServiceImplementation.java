@@ -15,15 +15,15 @@ public class FileServiceImplementation implements FileService{
     private List<Quiz> quizList;
 
     public FileServiceImplementation(){
-        retrieveList();
+        initializeList();
     }
 
     @Override
-    public void retrieveList(){
+    public void initializeList(){
         try{
             ObjectMapper objectMapper = new ObjectMapper();
             quizList = objectMapper.readValue(file, new TypeReference<List<Quiz>>(){});
-            shuffle(quizList);
+
         } catch (Exception e){
             e.printStackTrace();
             throw new RuntimeException("Failed to retrieve the data from the json file 'quiz_file.json'");
@@ -32,6 +32,7 @@ public class FileServiceImplementation implements FileService{
 
     @Override
     public List<Quiz> retrieveQuizList(){
+        shuffle(quizList);
         return quizList;
     }
 
@@ -44,5 +45,13 @@ public class FileServiceImplementation implements FileService{
                 Collections.shuffle(question.getOptions());
             }
         }
+    }
+
+    @Override
+    public Quiz getQuizById(int id) {
+        return quizList.stream()
+                .filter(q -> q.getId() == id)
+                .findFirst()
+                .orElseThrow(IllegalArgumentException::new);
     }
 }

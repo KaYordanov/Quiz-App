@@ -24,10 +24,7 @@ public class QuizServiceImplementation implements QuizService {
 
     @Override
     public Quiz getById(int id) {
-        return  getQuizList().stream()
-                    .filter(q -> q.getId() == id)
-                    .findFirst()
-                    .orElseThrow(IllegalArgumentException::new);
+        return fileService.getQuizById(id);
     }
     @Override
     public QuizResult getQuizResult(List<Question> questions, List<String> answers) {

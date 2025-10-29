@@ -51,6 +51,8 @@ public class QuizController {
 
         List<Question> questions = quizService.getById(form.getQuizId()).getQuestions();
         int totalPages = questions.size();
+        List<String> a = form.getAnswers();
+
 
         if(action.equals("next")){
             index++;
