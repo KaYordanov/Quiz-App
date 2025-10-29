@@ -9,7 +9,10 @@
 <div class="quiz-container">
     <form th:action="@{/quizzes/page/{pageNumber}(pageNumber=${index})}" th:object="${form}" method="post">
         <input type="hidden" th:field="*{quizId}"/>
-        <input type="hidden" name="index" th:value="${index}">
+        <input type="hidden" name="index" th:value="${index}"/>
+        <th:block th:each="i : ${#numbers.sequence(0, totalPages - 1)}">
+            <input type="hidden" th:field="*{answers[__${i}__]}"/>
+        </th:block>
         <div class="question-block">
             <h1 th:text="${questionToDisplay.text}" class="question-text"></h1>
             <div th:each="option : ${questionToDisplay.options}">

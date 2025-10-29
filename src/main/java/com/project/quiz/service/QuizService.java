@@ -7,10 +7,7 @@ import com.project.quiz.model.QuizResult;
 import java.util.List;
 
 public interface QuizService {
-    void shuffle();
-
     List<Quiz> getQuizList();
-
     Quiz getById(int id);
     QuizResult getQuizResult(List<Question> questions, List<String> answers);
 }

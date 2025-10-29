@@ -37,8 +37,8 @@ public class QuizController {
 
     @GetMapping("/{id}")
     public String getFirstQuizPage(@PathVariable ("id") int quizId,  Model model){
-        QuizForm form = new QuizForm();
-        form.setQuizId(quizId);
+        Quiz q = quizService.getById(quizId);
+        QuizForm form = new QuizForm(quizId, q.getQuestions().size());
 
         return getNextQuizPage(-1, "next", form,  model);
     }
